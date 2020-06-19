@@ -123,32 +123,3 @@ for (var i = 0; i < img.length; i++) {
 
 
 
-
-document.addEventListener('input', (e) => {
-  const selectCategory = document.getElementById('select-category');
-  if (e.target === selectCategory) {
-    const productBoxes = div;
-    const categoryVal = document.querySelectorAll('#select-category option');
-
-    if (selectCategory.value === 'all') {
-      show(productBoxes)
-    } else {
-      hide(productBoxes)
-    }
-    const matches = document.querySelectorAll(`[category*="${selectCategory.value}"]`)
-    show(matches)
-  }
-
-})
-
-
-const hide = (items) => {
-  Array.prototype.forEach.call(items, prodItem => {
-    prodItem.classList.add('hide')
-  })
-}
-const show = (items) => {
-  Array.prototype.forEach.call(items, prodItem => {
-    prodItem.classList.remove('hide')
-  })
-}
