@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/38edef601e.js"></script>
   <script src="prods.json"></script>
@@ -27,15 +27,19 @@
   </div>
   <hr>
   <h1> Best Sellers</h1>
-  <h3 class="results">results</h3>
+  <p class="results"> <span id="result">52</span> Results
+  </p>
+  </h3>
+
   <div class="selection">
-    <select id="select-category" class="select">
-      <option value="all"> SORT BY</option>
+
+    <select id="select-category" class="select" onchange="itemSort()">
+      <option value="all"> <i class="fas fa-sort"></i> SORT BY</option>
       <option value="highest">Highest to lowest</option>
       <option value="lowest">Lowest to Highest</option>
     </select>
 
-    <select id="select-category" class="select">
+    <select id="select-category2" class="select" onchange="itemfilter()">
       <option value="all"> FILTER</option>
       <option value="gold">Gold</option>
       <option value="silver">Silver</option>
@@ -56,25 +60,6 @@
 
 
 
-<div class="div">
-  <div category="all" class="product">
-    <img class="image" src="${product[i].image_link_mb}" alt="" width="500px"
-      style="border-bottom: 1px solid light-grey">
-    <div class="des">
-      <p class="title"> ${product[i].title}</p>
-    </div>
-    <p data-price="${product[i].price}">
-      <strike>${product[i].crossed_price}</strike><strong>${product[i].price}</strong>
-  </div>
-  <div id="myModal" class="modal">
-    <div id="img01"> ${product[i].description} <button class="buynow"> BUY NOW</button>
-      <span class="close">&times;</span> </div>
-    </p>
-
-  </div>
-
-
-</div>
 
 
 
