@@ -16,12 +16,12 @@ for (var i = 0; i < product.length; i++) {
       <p class="title"> ${product[i].title}</p>
     </div>
     <p data-price="${product[i].price}">
-      <strike>${product[i].crossed_price}</strike><strong>${product[i].price}</strong>
+      <strike>${product[i].crossed_price}</strike><strong>${product[i].price}</strong>  <div id="myModal" class="modal">
+      <div id="img01"> <div> ${product[i].description} </div><button class="buynow"> BUY NOW</button>
+        <span class="close">&times;</span> </div> </p>
   </div>
-  <div id="myModal" class="modal">
-    <div id="img01"> ${product[i].description} <button class="buynow"> BUY NOW</button>
-      <span class="close">&times;</span> </div>
-    </p>
+ 
+    
 
   </div>
 
@@ -48,23 +48,11 @@ div.innerHTML = products.join('')
 
 var modal = document.getElementById('myModal');
 
-var images = document.getElementsByClassName('image');
-
-var modalImg = document.getElementById("img01");
 
 
 
 
-for (var i = 0; i < products.length; i++) {
-  var img = images[i];
 
-  img.onclick = function (evt) {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-
-
-  }
-}
 
 var span = document.getElementsByClassName("close")[0];
 
@@ -78,15 +66,11 @@ span.onclick = function () {
 
 var showModal = function () {
   modal.style.display = "block";
-  modalImg.textContent = `${products[i].description}`;
+
 
 }
 
 
-for (var i = 0; i < img.length; i++) {
-  img[i].addEventListener('click', showModal);
-  modalImg.textContent = "`${products[i].description}`";
-}
 
 function itemfilter () {
   const fil = document.getElementById('select-category2').value
