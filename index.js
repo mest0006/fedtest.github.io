@@ -113,7 +113,7 @@ function itemfilter () {
     </div>
     <div id="myModal" class="modal">
       <div id="img01"> ${pro.description} <button class="buynow"> BUY NOW</button>
-        <span class="close">&times;</span> </div>
+        <span  id= "close" class="close">&times;</span> </div>
       </p>
   
     </div>
@@ -124,6 +124,8 @@ function itemfilter () {
     }
     div.innerHTML = filterProd.join('')
     document.getElementById('result').innerHTML = filterProd.length
+
+
   } else if (fil === 'silver') {
     console.log('yes, silver')
 
@@ -162,14 +164,13 @@ function itemfilter () {
 
   var modal = document.getElementById('myModal');
 
-  var images = document.getElementsByClassName('image');
 
   var modalImg = document.getElementById("img01");
 
 
 
 
-  for (var i = 0; i < products.length; i++) {
+  for (var i = 0; i < images.length; i++) {
     var img = images[i];
 
     img.onclick = function (evt) {
@@ -180,7 +181,9 @@ function itemfilter () {
     }
   }
 
-  var span = document.getElementById("close")[0];
+
+
+  var span = document.getElementById("close");
 
   span.onclick = function () {
     modal.style.display = "none";
