@@ -145,6 +145,7 @@ h1 {
 .selection {
   grid-template-columns: repeat(2, 1fr);
   display: grid;
+  grid-gap: 1;
   margin-left: auto;
   margin-right: auto;
 }
@@ -213,7 +214,7 @@ h1 {
   margin-right: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 80px;
   height: 90%;
   word-wrap: break-word;
 }
