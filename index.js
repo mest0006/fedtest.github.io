@@ -17,7 +17,8 @@ for (var i = 0; i < product.length; i++) {
     </div>
     <p data-price="${product[i].price}">
       <strike>${product[i].crossed_price}</strike><strong>${product[i].price}</strong>  <div id="myModal" class="modal">
-      <div id="img01"> <div> ${product[i].description} </div><button class="buynow"> BUY NOW</button>
+      <div id="img01"> <div id
+      ="modaltext"> ${product[i].description} </div><button class="buynow"> BUY NOW</button>
         <span class="close">&times;</span> </div> </p>
   </div>
  
@@ -50,8 +51,7 @@ var modal = document.getElementById('myModal');
 
 
 
-
-
+var modaltext = document.getElementById('modaltext')
 
 
 var span = document.getElementsByClassName("close")[0];
