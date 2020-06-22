@@ -136,7 +136,6 @@ h1 {
 .select {
   margin-left: auto;
   margin-right: auto;
-
   padding: 20px;
   width: 100%;
   background-color: whitesmoke;
@@ -212,11 +211,11 @@ h1 {
   background-color: white;
   color: black;
   margin-left: 20px;
-  margin-right: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 80px;
-  height: 90%;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 50px;
+  height: 80%;
   word-wrap: break-word;
 }
 
