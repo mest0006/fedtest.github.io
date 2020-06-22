@@ -147,6 +147,8 @@ h1 {
   display: grid;
   grid-gap: 1px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -210,12 +212,13 @@ h1 {
 #img01 {
   background-color: white;
   color: black;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding: 60px;
-  height: 90%;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 70px;
+  height: 80%;
+  width: 80%;
   word-wrap: break-word;
 }
 
