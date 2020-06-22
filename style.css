@@ -136,8 +136,9 @@ h1 {
 .select {
   margin-left: auto;
   margin-right: auto;
-  width: 150px;
+
   padding: 20px;
+  width: 100%;
   background-color: whitesmoke;
   border: none;
 }
@@ -146,8 +147,7 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   display: grid;
   grid-gap: 1px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
 
