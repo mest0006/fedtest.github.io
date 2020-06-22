@@ -210,17 +210,18 @@ h1 {
 }
 
 #img01 {
+
   background-color: white;
   color: black;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 20px;
+  margin-right: 50px;
   margin-top: 20px;
-  margin-bottom: 30px;
-  padding: 50px;
+  margin-bottom: 20px;
+  padding: 80px;
   height: 90%;
-
   word-wrap: break-word;
 }
+
 
 
 @keyframes zoom {
